@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-red:#D82800;
+  --color-white:#FFFFFF;
+  --color-black: #000000;
+}
