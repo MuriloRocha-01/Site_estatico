@@ -1,6 +1,11 @@
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import type { Swiper as SwiperClass } from 'swiper/types';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import  'swiper/css/navigation';
 
 
 import img from '../assets/image.jpg';
@@ -14,7 +19,7 @@ const MOCK_IMAGES = [
 
 const Carousel = () => {
 
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperClass | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
