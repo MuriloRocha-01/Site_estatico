@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        red:"#D82800",
+        red:"#e60000",
         white:"#FFFFFF",
         black:"#000000",
         buttoncard: "#3a3a3a"

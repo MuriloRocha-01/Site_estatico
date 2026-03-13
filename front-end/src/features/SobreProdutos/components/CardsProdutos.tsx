@@ -1,7 +1,7 @@
-import barraDeTransferencia from '../assets/barra de transferencia.jpg';
-import barraChata from '../assets/barra chata.jpg';
-import tubosEstruturais from '../assets/tubos estruturais.jpg';
-import Cantoneira from '../assets/cantoneiras.jpg';
+import barraDeTransferencia from '../../../assets/barra de transferencia.jpg';
+import barraChata from '../../../assets/barra chata.jpg';
+import tubosEstruturais from '../../../assets/tubos estruturais.jpg';
+import Cantoneira from '../../../assets/cantoneiras.jpg';
 
 function CardsProdutos(){
 return (

@@ -1,4 +1,4 @@
-import ButtonWhatsapp from "../components/buttonwhatsapp";
+
 import Carousel from "../components/Carousel";
 
 function Header(){
@@ -12,7 +12,7 @@ function Header(){
 
             <h2 className="max-w-xl">Perfis estruturais, chapas e tubos em aço para construtoras, serralherias e fabricantes de estruturas metálicas.</h2>
             <button className="border-2 p-2 max-w-64 hover:bg-white hover:text-black  transition duration-200 shadow-xl"> Solicitar orçamento agora</button>
-            <ButtonWhatsapp></ButtonWhatsapp>
+            
             </div>
             
         </div>

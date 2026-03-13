@@ -1,7 +1,7 @@
-import CardsProdutos from './SobreProdutos/CardsProdutos'
+import CardsProdutos from '../SobreProdutos/components/CardsProdutos'
 
 
-function Produtos(){
+function SobreProdutos(){
     return(
         <section >
             
@@ -17,4 +17,4 @@ function Produtos(){
     
 }
 
-export default Produtos;
+export default SobreProdutos;

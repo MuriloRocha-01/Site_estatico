@@ -1,6 +1,7 @@
 import Menu from '../components/Menu'
 import Header from '../features/Header'
-import SobreProdutos from '../features/SobreProdutos'
+import SobreProdutos from '../features/SobreProdutos/SobreProdutos'
+
 
 function Home(){
     return(
@@ -8,6 +9,7 @@ function Home(){
             <Menu></Menu>
             <Header></Header>
             <SobreProdutos></SobreProdutos>
+            
         </>
     )        
 }   
