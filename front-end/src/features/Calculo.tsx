@@ -7,7 +7,7 @@ function Calculo(){
             <span className="text-buttoncard text">Calcule rapidamente o peso aproximado dos perfis de aço informando tipo, comprimento e quantidade. Uma forma simples  e rápida de estimar o material para seu projeto.</span>
 
 
-        <form className=" mt-4 max-w-[90%]">
+        <form className=" mt-4 max-w-[90%] ">
             <label className="block rounded-[20px] mb-3 ">Escolha o tipo de perfil:
                 <select name="perfil" id="perfil" className=" ml-2 border p-1 w-[203px] rounded-lg">
                     <option selected disabled>Selecione</option>
