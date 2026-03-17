@@ -10,7 +10,8 @@ export default {
         red: "#e60000",
         white: "#FFFFFF",
         black: "#000000",
-        buttoncard: "#3a3a3a"
+        buttoncard: "#3a3a3a",
+        backgroundsobre: "#141414",
       },
       fontFamily: {
         // Ao definir 'sans', ela se torna a fonte padrão do Tailwind

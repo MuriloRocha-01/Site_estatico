@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpg'
+import { Instagram } from 'lucide-react';
 
 function Footer(){
     return(
@@ -9,8 +9,8 @@ function Footer(){
             
             <div>
             <span>Politícas e Termos de Uso</span>
-            <span></span>
-            <img src={logo} alt='logo da empresa gran perfil' className='w-32'></img>
+            
+            
             </div>
 
             <div>
@@ -58,9 +58,12 @@ function Footer(){
 
             <div className="flex flex-col ">
                 <span>Informações para contato</span>
-                <span>📧Anonimo@gmail.com</span>
-                <span>📞(13)99601-2906</span>
-                <span>📍Rua. alvedro simpatia conceito</span>
+                <span>📧Comercial@granperfil.com.br</span>
+                <span>📞(11)2273-7171</span>
+                <span>📍Avenida Henry Ford, número 1028</span>
+                <div className='flex gap-2'>
+                <Instagram />
+                </div>
             </div>
         </div>
         </div>

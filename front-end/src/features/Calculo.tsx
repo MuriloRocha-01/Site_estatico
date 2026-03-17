@@ -11,9 +11,15 @@ function Calculo(){
             <label className="block rounded-[20px] mb-3 ">Escolha o tipo de perfil:
                 <select name="perfil" id="perfil" className=" ml-2 border p-1 w-[203px] rounded-lg">
                     <option selected disabled>Selecione</option>
-                    <option value="perfil w ">Perfil W</option>
-                    <option value="cantoneiras">Cantoneiras</option>
-                    <option value="perfil i">Perfil I</option>
+                    <option value="cantoneiras ">Cantoneiras</option>
+                    <option value="perfil u simples">Pefil U Simples</option>
+                    <option value="perfil u enrijecidos">Perfil U Enrijecidos</option>
+                    <option value="barra chata">Barra chata</option>
+                    <option value="tubos de aco">Tubos de aço</option>
+                    <option value="vigas de aco">Vigas de aço</option>
+                    <option value="ferro redondo">Ferro Redondo</option>
+                    <option value="perfis laminados">Perfis Laminados</option>
+                    <option value="perfis dobrados sob medidas">Perfis Dobrados Sob Medidas</option>
                 </select>
             </label>
             <label className="block mb-3">Digite o comprimento:

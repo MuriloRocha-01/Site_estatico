@@ -33,12 +33,42 @@ function Menu() {
               </li>
               <li>
                 <a href="#" className="hover:text-red block text-black">
-                  Chapas de aço
+                  Perfis Dobrados Sob Medidas
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-red block text-black">
-                  Tubos estruturais
+                  Perfis Laminados
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-red block text-black">
+                  Ferro Redondo
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-red block text-black">
+                  Vigas de Aço
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-red block text-black">
+                  Tubos de aço
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-red block text-black">
+                  Barra chata
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-red block text-black">
+                  Perfis U Enrijecidos
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-red block text-black">
+                  Perfis U Simples
                 </a>
               </li>
 

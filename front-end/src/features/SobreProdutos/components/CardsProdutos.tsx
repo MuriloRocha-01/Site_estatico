@@ -1,43 +1,87 @@
-import barraDeTransferencia from '../../../assets/barra de transferencia.jpg';
-import barraChata from '../../../assets/barra chata.jpg';
-import tubosEstruturais from '../../../assets/tubos estruturais.jpg';
-import Cantoneira from '../../../assets/cantoneiras.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+import barrachata from '../../../assets/barra chata.jpg' 
+import PerfisLaminados from '../../../assets/perfis laminados.jpg';
+import PerfisUSimples from '../../../assets/perfil u simples.jpg';
+import PerfisUEnrijecidos from '../../../assets/perfil u enrijecido.jpg';
+import VigasdeAco from '../../../assets/vigas de aço.jpg';
+import FerroRedondo from  '../../../assets/ferro redondo.jpg';
+import PerfisDobradosSobMedida from '../../../assets/perfis dobrados sob medida.jpg';
+import Cantoneiras from '../../../assets/cantoneiras.jpg';
+import tubodeaco from '../../../assets/tubos de aço.jpg';
 
-function CardsProdutos(){
-return (
-    <section className='flex justify-center gap-12 mb-20 '>
-    <section className='p-3 w-52 shadow-xl cursor-pointer hover:scale-105 transition duration:5 bg-white'>
-        <img src={barraChata} className=' w-48 rounded-xl shadow-xl ' alt='Chapas de aço'></img>
-        <p className=' font-bold text(card-text) mt-2'>Chapas de aço</p>
-        <span className='text-[15px] text-buttoncard'>Alta resistência, durabilidade e versatilidade para diversos tipos de projetos...</span>
-    </section>
+import type { Swiper as SwiperClass } from 'swiper/types';
+import { useRef} from "react";
 
-    <section className='p-3 w-52 shadow-xl cursor-pointer hover:scale-105 transition duration:5'>
-        <img src={tubosEstruturais} className=' w-48 rounded-xl shadow-xl ' alt='Tubos Estruturaus'></img>
-        <p className=' font-bold mt-2'>Tubos estruturais</p>
-        <span className='text-[15px] text-buttoncard'> Alta resistência, durabilidade e versatilidade para diversos tipos de projetos. Ideais para construção civil, serralheria e indústria...</span>
-    </section>
+import 'swiper/css';
+import 'swiper/css/pagination';
+import  'swiper/css/navigation';
 
-    <section className='p-3 w-52 shadow-xl cursor-pointer hover:scale-105 transition duration:5'>
-        <img src={Cantoneira} className=' w-48 rounded-xl shadow-xl ' alt='Cantoneira'></img>
-        <p className='font-bold mt-2'>Cantoneiras</p>
-        <span className='text-[15px] text-buttoncard'>Resistência e versatilidade para reforço e montagem de estruturas metálicas</span>
-    </section>
+const MOCK_IMAGES = [
+  { id: 0, url: Cantoneiras, title: 'Cantoneira', descricao:'Perfis amplamente utilizados em estruturas metálicas, reforços, suportes e diversos tipos de construções e montagens industriais.'},
+  { id: 0, url: PerfisLaminados, title: 'Perfis Laminados', descricao:'Perfis produzidos por processo de laminação que garantem alta resistência e precisão dimensional para aplicações estruturais e industriais.'},
+  { id: 1, url: barrachata, title: 'Barra chata ', descricao:'Material versátil utilizado em serralheria, estruturas metálicas, fabricação de peças e diversos projetos industriais.'},
+  { id: 2, url: PerfisUSimples, title: 'Perfis U Simples', descricao:'Indicados para aplicações estruturais, fabricação de equipamentos, estruturas metálicas e reforços em projetos industriais.'},
+  { id: 3, url: PerfisUEnrijecidos, title: 'Perfis U Enrijecidos', descricao:'Perfis com maior resistência estrutural, ideais para aplicações que exigem maior capacidade de carga e rigidez.'},
+  { id: 4, url: VigasdeAco, title: 'Vigas de Aço', descricao:'Elementos estruturais essenciais para obras e construções que necessitam de alta resistência e estabilidade.'},
+  { id: 5, url: FerroRedondo, title: 'Ferro Redondo', descricao:'Aplicado em fabricação de peças, estruturas metálicas, grades, portões e diversos projetos industriais e metalúrgicos.'},
+  { id: 6, url: PerfisDobradosSobMedida, title: 'Perfis Dobrados Sob Medida', descricao:'A GranPerfil também desenvolve perfis dobrados de acordo com o projeto e necessidade de cada cliente. Trabalhamos com fabricação personalizada, permitindo produzir perfis específicos conforme desenho técnico ou especificações do projeto.'},
+  { id: 6, url: tubodeaco, title: 'Tubos de aço', descricao:'Utilizados em estruturas, construção civil, serralheria e aplicações industriais que exigem resistência e durabilidade.'}
 
-    <section className='p-3 w-52 shadow-xl cursor-pointer hover:scale-105 transition duration:5'>
-        <img src={barraDeTransferencia} className=' w-48 rounded-xl shadow-xl '></img>
-        <p className='font-bold mt-2'>Barra de transferencia</p>
-        <span></span>
-    </section>
-    <div className='border-t-[25px] border-red  w-[15%] -z-10 absolute left-0 -bottom-[330px] '></div>
-    <div className='border-t-[25px] border-red  w-[15%] -z-10 absolute left-0 -bottom-[370px] '></div>
-    <div className='border-t-[25px] border-red  w-[15%] -z-10 absolute left-0 -bottom-[410px] '></div>
-    </section>
-    
-)
+];
+export default function Footer() {
 
+ const swiperRef = useRef<SwiperClass | null>(null);
+  
 
+  return (
+    <div className="relative ">
+
+      
+      <button
+        onClick={() => swiperRef.current?.slidePrev()}
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-red text-white p-2 rounded-full w-12"
+      >◀
+      </button>
+
+      
+      <button
+        onClick={() => swiperRef.current?.slideNext()}
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-red text-white p-2 rounded-full w-12"
+      >▶
+      </button>
+
+      <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        modules={[Navigation, Pagination]}
+        slidesPerView={4}
+        spaceBetween={0}
+        loop={true}
+      >
+        
+        {MOCK_IMAGES.map((img) => (
+          <SwiperSlide key={img.id}>
+            <div className='mx-auto cursor-pointer rounded-md shadow-xl p-3 w-52 flex flex-col items-center justify-center hover:scale-105 transition duration-300'>
+            <img
+              src={img.url}
+              alt={img.title}
+              className=" w-full h-32 object-cover rounded-xl shadow-xl "
+            />
+            <span className='mt-2 text-sm font-semibold'>
+                {img.title}
+            </span>
+            <span className='mt-2 text-sm font-sl'>
+                {img.descricao}
+            </span>
+            </div>
+            
+          </SwiperSlide>
+        ))}
+        
+      </Swiper>
+
+    </div>
+  );
 }
 
 
-export default CardsProdutos;
