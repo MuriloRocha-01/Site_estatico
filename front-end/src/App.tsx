@@ -7,10 +7,12 @@ import OrcamentoPage from './pages/OrcamentoPage';
 import SobrePage from './pages/SobrePage';
 
 
+
+
 function App() {
   return (
     <>
-    <ProdutoPage/>
+    <Home/>
     </>
       
   )

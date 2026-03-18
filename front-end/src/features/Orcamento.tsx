@@ -25,9 +25,9 @@ function Orcamento(){
 </div>
 
     
-    <div className="w-1/2 flex items-center justify-center">
+    <div className="w-1/2 flex items-center justify-center bg-gray-300">
 
-        <form className="bg-white p-8 rounded-xl shadow-xl w-[400px] flex flex-col gap-4">
+        <form className="bg-white p-8 rounded-xl shadow-[2px_-1px_10px_1px_#494949] w-[400px] flex flex-col gap-4 ">
 
             <label>Digite o nome da empresa:</label>
             <input

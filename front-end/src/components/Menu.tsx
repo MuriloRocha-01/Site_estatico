@@ -1,10 +1,10 @@
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.png';
 
 function Menu() {
   return(
-    <div className='flex border-b-3 bg-black sticky top-0 z-40  border-b-[1px]'>
+    <div className='flex border-b-3 bg-[#1a1a1a] sticky top-0 z-40  border-b-[1px]'>
 
-      <img src={logo} alt="Logo" className='h-20 py-2 pl-6'/>
+      <img src={logo} alt="Logo" className='h-20 py-2 pl-[10%]'/>
 
       <nav>
         <ul className='pl-40 py-6 flex gap-10 text-white'>
