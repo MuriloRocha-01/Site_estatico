@@ -26,7 +26,7 @@ const Carousel = () => {
     <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
 
       <Swiper
-        className="w-full h-full"
+        className="w-full h-full "
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         modules={[Autoplay, Navigation, Pagination]}

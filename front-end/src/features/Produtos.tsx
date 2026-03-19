@@ -4,7 +4,7 @@ import Hero from '../components/Hero/Hero';
 function Produtos(){  
 
     return(
-        <div className='w-full min-h-[85vh]'>
+        <div className='w-full mb-[6%]'>
             <Hero
                 imagem={fundoProdutos}
                 label1="Veja Nossos Produtos"

@@ -11,7 +11,7 @@ function Header(){
             
 
             <h2 className="max-w-xl text-[0.7rem] md:text-base">Perfis estruturais, chapas e tubos em aço para construtoras, serralherias e fabricantes de estruturas metálicas.</h2>
-            <button className=" md:border-2 p-2 max-w-64 hover:bg-white hover:text-black  transition duration-200 shadow-xl"> Solicitar orçamento agora</button>
+            <button className="font-bold p-2 max-w-64 bg-white md:bg-transparent text-black md:text-white md:border-2 md:hover:bg-white md:hover:text-black  transition duration-200 shadow-xl"> Solicitar orçamento agora</button>
             
             </div>
             

@@ -12,7 +12,7 @@ import SobrePage from './pages/SobrePage';
 function App() {
   return (
     <>
-    <Home/>
+    <SobrePage/>
     </>
       
   )

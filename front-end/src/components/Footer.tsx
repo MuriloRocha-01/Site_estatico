@@ -10,24 +10,24 @@ function Footer(){
     const localDesejado = { lat: -23.528867978321188, lng: -46.76167588221847 }; 
             
     return(
-        <div className='mt-20'>
+        <div className='bg-gray-200'>
             
         
-        <div className="block md:flex gap-32 justify-center align-center py-10 text-base text-gray-300 bg-[#1a1a1a] ">
+        <div className="flex flex-col justify-center items-center md:flex-row md:gap-32 justify-center align-center py-10 text-base text-gray-300 bg-[#1a1a1a] ">
             
-            <div >
+            <div className='mb-4'>
                 
                 <GoogleMap  center={localDesejado} zoom={18} apiKey={apiKey} />
             </div>
             <div className="flex flex-col gap-[9px]">
                 <span className='text-center text-[1.2rem] mb-2 text-white'>Informações para contato</span>
 
-                    <span className='flex gap-2'>
+                    <span className='text-center md:text-left flex gap-2'>
                     <Mail size={23} className='hover:scale-105'/>
                     Comercial@granperfil.com.br
                     </span>
 
-                    <span className='flex gap-2'>
+                    <span className='text-center md:text-left flex gap-2'>
                     <Phone size={23} className='hover:scale-105'/>
                     (11)2273-7171
                     </span>

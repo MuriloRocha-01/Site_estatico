@@ -11,10 +11,10 @@ const Hero = ({ imagem, label1, label2 } : HeroProps) => {
             <div className='absolute inset-0 bg-black/50 z-10'></div>
 
             <section className='relative z-20 px-4 font-montserrat text-left text-white ml-10'>
-            <h1 className=' font-bold text-3xl md:text-4xl tracking-wider'>
+            <h1 className='text-[1.4rem] font-bold md:text-3xl md:text-4xl tracking-wider'>
                 {label1}
             </h1>
-            <h2 className=' text-lg font-light max-w-2xl mx-auto'>
+            <h2 className='text-[1rem] md:text-lg font-light max-w-2xl mx-auto'>
                 {label2}
             </h2>
             </section>

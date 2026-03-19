@@ -38,7 +38,7 @@ export default function CardProdutos() {
   
 
   return (
-    <div className="relative px-10 md:mx-20">
+    <div className="relative px-10 mx-4 md:mx-20 pb-10 ">
 
       
       <button
@@ -76,11 +76,11 @@ export default function CardProdutos() {
         
         {MOCK_IMAGES.map((img) => (
           <SwiperSlide key={img.id}>
-            <div className='p-2 cursor-pointer h-full w-60 md:w-52 flex flex-col items-center justify-center hover:scale-105 transition duration-300'>
+            <div className='shadow-xl p-2 cursor-pointer h-full w-60 md:w-52 flex flex-col items-center justify-center hover:scale-105 transition duration-300'>
             <img
               src={img.url}
               alt={img.title}
-              className=" w-full h-32 object-cover rounded-xl shadow-xl "
+              className=" w-full h-32 object-cover rounded-xl shadow-xl"
             />
             <span className='mt-2 text-sm font-semibold'>
                 {img.title}

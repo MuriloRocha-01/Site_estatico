@@ -11,7 +11,7 @@ function GoogleMap({ center, zoom =10, apiKey}: GoogleMapProps) {
 
 
   return (
-    <div style={{ borderRadius: '20px', overflow: 'hidden', height: '200px', width: '400px' }}>
+    <div style={{ borderRadius: '20px', overflow: 'hidden', aspectRatio: '16 / 9', maxHeight: '600px', width: '320px', }}>
       <APIProvider apiKey={apiKey} region="BR" language="pt-BR">
         <Map
           defaultCenter={center}
