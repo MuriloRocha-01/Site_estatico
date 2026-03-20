@@ -58,29 +58,29 @@ export default function CardProdutos() {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Navigation, Pagination]}
         slidesPerView={1}
-        spaceBetween={0}
+        spaceBetween={40}
         loop={false}
-        className='w-[85%] md:w-[80%]'
+        className="w-[90%] md:w-[80%] "
         breakpoints={{
         640: {
           slidesPerView: 2,
-          spaceBetween:0
+          spaceBetween:15
           },
         
         1024: {
           slidesPerView: 4,
-          spaceBetween:0
+          spaceBetween:20
         },
         }}
       >
         
         {MOCK_IMAGES.map((img) => (
           <SwiperSlide key={img.id}>
-            <div className='shadow-xl p-2 cursor-pointer h-full w-60 md:w-52 flex flex-col items-center justify-center hover:scale-105 transition duration-300'>
+            <div className='shadow-xl rounded-xl p-3 cursor-pointer flex flex-col items-center hover:scale-105 transition duration-300'>
             <img
               src={img.url}
               alt={img.title}
-              className=" w-full h-32 object-cover rounded-xl shadow-xl"
+              className="w-full shadow-xl h-32 object-cover rounded-xl"
             />
             <span className='mt-2 text-sm font-semibold'>
                 {img.title}

@@ -2,10 +2,10 @@ import orcamentofundo from '../assets/orcamento fundo.jpg'
 
 function Orcamento(){
     return(
-        <div className="block md:flex min-h-[90vh] bg-gray-300 -z-30">
+        <div className="block md:flex min-h-[100vh] bg-gray-300 -z-30 ">
 
     
-    <div className="w-full h-sreen md:w-1/2 flex flex-col justify-center p-12 text-white relative overflow-hidden">
+    <div className="w-full h-sreen md:w-1/2 flex flex-col justify-center p-12 text-white relative overflow-hidden pt-20">
 
             <img 
                 src={orcamentofundo}
@@ -28,7 +28,7 @@ function Orcamento(){
     
     <div className="w-full h-sreen md:w-1/2 flex items-center justify-center">
 
-        <form className="bg-white p-8 md:rounded-xl shadow-[2px_-1px_10px_1px_#494949] w-full md:w-[400px] flex flex-col gap-4">
+        <form className="mt-0 md:mt-16 bg-white p-8 md:rounded-xl shadow-[10px_10px_20px_rgba(2,6,23,0.3)] w-full md:w-[400px] flex flex-col gap-4">
 
             <label>Digite o nome da empresa:</label>
             <input

@@ -7,7 +7,7 @@ function Header(){
 
             <Carousel></Carousel>
             <div className="ml-5 md:text-left flex flex-col gap-3 mr-40 relative z-10 text-white">
-            <h1 className="text-[1rem] md:text-2xl font-bold  max-w-xl">Distribuição de ferro e aço estrutural com entrega rápida e preços competitivos.</h1>
+            <h1 className="text-[1rem] md:text-2xl font-bold md:max-w-xl">Distribuição de ferro e aço estrutural com entrega rápida e preços competitivos.</h1>
             
 
             <h2 className="max-w-xl text-[0.7rem] md:text-base">Perfis estruturais, chapas e tubos em aço para construtoras, serralherias e fabricantes de estruturas metálicas.</h2>

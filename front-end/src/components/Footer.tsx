@@ -17,7 +17,7 @@ function Footer(){
             
             <div className='mb-4'>
                 
-                <GoogleMap  center={localDesejado} zoom={18} apiKey={apiKey} />
+                <GoogleMap  center={localDesejado} zoom={12} apiKey={apiKey} />
             </div>
             <div className="flex flex-col gap-[9px]">
                 <span className='text-center text-[1.2rem] mb-2 text-white'>Informações para contato</span>
