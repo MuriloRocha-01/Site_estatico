@@ -4,7 +4,7 @@ function Sobre(){
     return(
         <section className='relative'>
                 
-            <section className='min-h-[100vh] md:h-full pl-4 py-[80px] text-center gap-14 justify-center w-full flex items-center bg-gray-300'>
+            <section className='min-h-[110vh] md:h-full pl-4 pt-[50px] text-center gap-14 justify-center w-full flex items-center bg-gray-300'>
                     
                     <div className='w-[500px] text-left '>
                         <h1 className='mb-5 text-[1.4rem] md:text-[1.7rem] font-bold '>Conheça nossa <span className='text-red'>História</span></h1>
@@ -28,9 +28,9 @@ function Sobre(){
                     </div>
             </section>
                 
-                <div className='hidden lg:block absolute bg-red z-10  inset-y-0 top-[50.5%] left-0 h-[3.5%] w-[20%] rounded-r-xl'></div>
+                
 
-            <section className='py-24 px-6 md:px-32 bg-gray-100 text-black'>
+            <section className='py-16 px-6 md:px-32 bg-gray-100 text-black'>
 
     
                     <div className='max-w-3xl mb-12 '>

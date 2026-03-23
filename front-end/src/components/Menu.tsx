@@ -41,7 +41,7 @@ const Menu = () => {
           <ul className="pl-40 py-6 flex gap-10 text-white">
             <li>
               <a
-                className="cursor-pointer hover:text-red hover:scale-110 transition duration-200 block"
+                className="cursor-pointer hover:text-red hover:scale-105 transition duration-200 block"
                 href="#"
               >
                 Home
@@ -50,7 +50,7 @@ const Menu = () => {
 
             <li className="relative group">
               <a
-                className="cursor-pointer hover:text-red hover:scale-110 transition duration-200 block"
+                className="cursor-pointer hover:text-red hover:scale-105 transition duration-200 block"
                 href="#"
               >
                 Produtos
@@ -107,7 +107,7 @@ const Menu = () => {
 
             <li>
               <a
-                className="cursor-pointer hover:text-red hover:scale-110 transition duration-200 block"
+                className="cursor-pointer hover:text-red hover:scale-105 transition duration-200 block"
                 href="#"
               >
                 Segmentos
@@ -116,7 +116,7 @@ const Menu = () => {
 
             <li>
               <a
-                className="cursor-pointer hover:text-red hover:scale-110 transition duration-200 block"
+                className="cursor-pointer hover:text-red hover:scale-105 transition duration-200 block"
                 href="#"
               >
                 Calculadora de aço
@@ -125,7 +125,7 @@ const Menu = () => {
 
             <li>
               <a
-                className="cursor-pointer hover:text-red hover:scale-110 transition duration-200 block"
+                className="cursor-pointer hover:text-red hover:scale-105 transition duration-200 block"
                 href="#"
               >
                 Sobre
@@ -134,7 +134,7 @@ const Menu = () => {
 
             <li>
               <a
-                className="cursor-pointer hover:text-red hover:scale-110 transition duration-200 block"
+                className="cursor-pointer hover:text-red hover:scale-105 transition duration-200 block"
                 href="#"
               >
                 Orçamento
@@ -149,7 +149,7 @@ const Menu = () => {
         <button
           className="text-white flex lg:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? ("Abrir menu ") :("Fechar menu")}
+          aria-label={isOpen ? ("Fechar menu ") :("Abrir menu")}
           
         >
           {isOpen ? (
@@ -161,9 +161,9 @@ const Menu = () => {
 
        
         <div
-          className={`lg:hidden fixed inset-x-0 top-[66px] h-full bg-[#1a1a1a] bg-opacity-95 z-40 transition-all duration-800 ease-in-out ${
+          className={`lg:hidden fixed inset-x-0 top-[65px] h-full bg-[#1a1a1a] bg-opacity-95 z-40 transition-all duration-800 ease-in-out ${
           isOpen
-            ? 'opacity-100 translate-y-0 h-[calc(100vh-2rem)] '
+            ? 'opacity-100 translate-y-0 h-[100vh] '
             : 'opacity-0 -translate-y-4 pointer-events-none '
         }`}
           onClick={closeMenu}

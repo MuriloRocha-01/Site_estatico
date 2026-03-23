@@ -4,7 +4,7 @@ import Calculo from '../features/Calculo';
 import ButtonWhatsapp from '../components/ButtonWhatsapp';
 import Footer from '../components/Footer';
 
-function Calculadora(){
+function CalculadoraPage(){
     return(
         <>
             <Menu></Menu>
@@ -18,4 +18,4 @@ function Calculadora(){
 }
 
 
-export default Calculadora; 
+export default CalculadoraPage; 

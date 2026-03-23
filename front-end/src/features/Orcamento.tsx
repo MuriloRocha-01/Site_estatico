@@ -5,14 +5,14 @@ function Orcamento(){
         <div className="block md:flex min-h-[100vh] bg-gray-300 -z-30 ">
 
     
-    <div className="w-full h-sreen md:w-1/2 flex flex-col justify-center p-12 text-white relative overflow-hidden pt-20">
+    <div className="w-full md:h-screen h-[550px] md:w-1/2 flex flex-col justify-center p-12 text-white relative overflow-hidden pt-20">
 
             <img 
                 src={orcamentofundo}
-                className="absolute inset-0 w-full h-full object-cover z-0 "
+                className="absolute inset-0 h-full w-full object-cover z-0 "
                 alt="orçamento fundo"
             />
-            <div className='absolute inset-0 bg-black/40 z-5'></div>
+            <div className='absolute inset-0 bg-black/50 z-5'></div>
 
 
             <h1 className="text-3xl md:text-4xl font-bold mb-4 z-10">
