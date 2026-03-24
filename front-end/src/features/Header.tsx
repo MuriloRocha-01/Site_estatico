@@ -1,7 +1,9 @@
 
 import Carousel from "../components/Carousel";
 
+import {useMenu} from '../components/Menu/hooks/useMenu'
 function Header(){
+    const {goToOrcamento, isOrcamentoActive} = useMenu(); 
     return(
         <div className="relative flex items-center justify-center h-[calc(100vh-80px)] w-full overflow-hidden">
 
@@ -11,7 +13,9 @@ function Header(){
             
 
             <h2 className="max-w-xl text-[0.7rem] md:text-base">Perfis estruturais, chapas e tubos em aço para construtoras, serralherias e fabricantes de estruturas metálicas.</h2>
-            <button className="font-bold p-2 max-w-[80%] md:max-w-64 bg-white md:bg-transparent text-black md:text-white md:border-2 md:hover:bg-white md:hover:text-black  transition duration-200 shadow-xl"> Solicitar orçamento agora</button>
+            <button className="font-bold p-2 max-w-[80%] md:max-w-64 bg-white md:bg-transparent text-black md:text-white md:border-2 md:hover:bg-white md:hover:text-black  transition duration-200 shadow-xl"
+            onClick={goToOrcamento} > Solicitar orçamento agora</button>
+            
             
             </div>
             

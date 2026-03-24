@@ -1,14 +1,13 @@
 import Orcamento from '../features/Orcamento';
-import Menu from '../components/Menu';
-import Footer from '../components/Footer';
-import ButtonWhatsapp from '../components/ButtonWhatsapp';
+
+import MainLayout from '../layouts/MainLayout/MainLayout';
+
 function OrcamentoPage(){
     return(
         <>
-        <Menu/>
+        <MainLayout>
         <Orcamento/>
-        <Footer/>
-        <ButtonWhatsapp/>
+        </MainLayout>
         </>
     )    
 };

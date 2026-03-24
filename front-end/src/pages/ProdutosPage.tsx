@@ -1,20 +1,27 @@
-import Produtos from '../features/Produtos.tsx'
-import Menu from '../components/Menu'
-import ButtonWhatsapp from '../components/ButtonWhatsapp.tsx';
+import ProdutosFundo from '../assets/produtos fundo.jpg'
 import CardsProdutos from '../features/SobreProdutos/components/CardsProdutos';
-import Footer from '../components/Footer';
-function ProdutosPage(){  
+
+import MainLayoutHero from '../layouts/MainLayoutHero/MainLayoutHero.tsx';
+
+function ProdutosDetalhePage(){  
 
     return(
         <>
-            <Menu/>
-            <Produtos/>
-            <CardsProdutos/>
-            <ButtonWhatsapp/>
-            <Footer/>
+            <MainLayoutHero
+            imagem={ProdutosFundo}
+            label1="Veja Nossos Produtos"
+            label2={
+            <>
+                Perfis estruturais em aço com a qualidade e <br />
+                entrega rápida que sua obra precisa.
+            </>
+            }>
+                
+                <CardsProdutos/>
+            </MainLayoutHero>
         </>
     )
 
 }
 
-export default ProdutosPage; 
+export default ProdutosDetalhePage; 

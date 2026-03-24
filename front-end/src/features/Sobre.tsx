@@ -1,5 +1,5 @@
-
 import sobreatendimento from '../assets/sobre atendimento.jpg';
+
 function Sobre(){
     return(
         <section className='relative'>

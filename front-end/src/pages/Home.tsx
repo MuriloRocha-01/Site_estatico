@@ -1,17 +1,15 @@
-import Menu from '../components/Menu'
-import Header from '../features/Header'
-import SobreProdutos from '../features/SobreProdutos/SobreProdutos'
-import ButtonWhatsapp from '../components/ButtonWhatsapp'
-import Footer from '../components/Footer';
+import Header from '../features/Header';
+import SobreProdutos from '../features/SobreProdutos/SobreProdutos';
+
+import MainLayout from '../layouts/MainLayout/MainLayout';
 
 function Home(){
     return(
         <>
-            <Menu></Menu>
+            <MainLayout>
             <Header></Header>
             <SobreProdutos></SobreProdutos>
-            <ButtonWhatsapp/>
-            <Footer/>
+            </MainLayout>
         </>
     )        
 }   

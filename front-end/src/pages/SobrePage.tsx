@@ -1,15 +1,12 @@
-import Menu from '../components/Menu';
 import Sobre from '../features/Sobre';
-import Footer from '../components/Footer';
-import ButtonWhatsapp from '../components/ButtonWhatsapp';
+import MainLayout from '../layouts/MainLayout/MainLayout'
 
 function SobrePage(){
     return(
         <>
-        <Menu/>
+        <MainLayout>
         <Sobre/>
-        <Footer/>
-        <ButtonWhatsapp/>
+        </MainLayout>
         </>
     )
 }

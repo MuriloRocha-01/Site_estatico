@@ -11,12 +11,15 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import {useMenu} from '../../../components/Menu/hooks/useMenu'
+
 import { MOCK_PRODUCTS } from '../../../shared/products_mock';
 
 export default function CardProdutos() {
 
  const swiperRef = useRef<SwiperClass | null>(null);
   
+ const {goToProdutoEspecifico} = useMenu();
 
   return (
     <div className="relative px-0 md:px-10 mx-4 md:mx-20 pt-15 pb-20 md:pb-0">
@@ -54,6 +57,7 @@ export default function CardProdutos() {
         {MOCK_PRODUCTS.map((img) => (
           <SwiperSlide key={img.id} className='px-3'>
             <div className='min-h-[280px] shadow-xl rounded-xl p-3 cursor-pointer flex flex-col items-center hover:scale-105 transition duration-300'
+            onClick={()=> goToProdutoEspecifico(img.id)}
             >
             <img
               src={img.url}

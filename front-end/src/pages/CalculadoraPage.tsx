@@ -1,17 +1,16 @@
-import CalculadoraAco from '../features/CalculadoraAco';
-import Menu from '../components/Menu';
 import Calculo from '../features/Calculo';
-import ButtonWhatsapp from '../components/ButtonWhatsapp';
-import Footer from '../components/Footer';
+import produtosfundo from '../assets/produtos fundo.jpg';
+import MainLayoutHero from '../layouts/MainLayoutHero/MainLayoutHero';
 
 function CalculadoraPage(){
     return(
         <>
-            <Menu></Menu>
-            <CalculadoraAco/>
+        <MainLayoutHero
+        imagem={produtosfundo}
+        label1="Calculadora de Aço"
+        label2=""> 
             <Calculo/>
-            <ButtonWhatsapp/>
-            <Footer/>
+        </MainLayoutHero>
         </>
         
     )
