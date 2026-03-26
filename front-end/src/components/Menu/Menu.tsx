@@ -115,6 +115,7 @@ const Menu = () => {
 
                   <div className={`w-full transition-all duration-300 ease-in-out overflow-hidden ${produtosOpen ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                     <ul className="flex flex-col items-center gap-5 py-6 px-4 text-base bg-white/5 border ">
+                      <li><a className="opacity-80" onClick={() => { goToProdutos();           closeMenu();}}>Todos os produtos </a></li>
                       <li><a className="opacity-80" onClick={() => { goToProdutoEspecifico(0); closeMenu(); }}>Cantoneiras</a></li>
                       <li><a className="opacity-80" onClick={() => { goToProdutoEspecifico(1); closeMenu(); }}>Perfis Dobrados Sob Medidas</a></li>
                       <li><a className="opacity-80" onClick={() => { goToProdutoEspecifico(2); closeMenu(); }}>Perfis Laminados</a></li>
@@ -123,7 +124,7 @@ const Menu = () => {
                       <li><a className="opacity-80" onClick={() => { goToProdutoEspecifico(5); closeMenu(); }}>Tubos de aço</a></li>
                       <li><a className="opacity-80" onClick={() => { goToProdutoEspecifico(6); closeMenu(); }}>Barra chata</a></li>
                       <li><a className="opacity-80" onClick={() => { goToProdutoEspecifico(7); closeMenu(); }}>Perfis U Enrijecidos</a></li>
-                      <li><a className="opacity-100" onClick={() => { goToProdutoEspecifico(8); closeMenu(); }}>Perfis U Simples</a></li>
+                      <li><a className="opacity-100" onClick={() =>{ goToProdutoEspecifico(8);closeMenu(); }}>Perfis U Simples</a></li>
                     </ul>
                   </div>
                 </li>

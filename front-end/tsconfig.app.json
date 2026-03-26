@@ -15,6 +15,12 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "swiper/css": ["node_modules/swiper/swiper.min.css"],
+      "swiper/css/*": ["node_modules/swiper/modules/*"]
+    },
 
     /* Linting */
     "strict": true,

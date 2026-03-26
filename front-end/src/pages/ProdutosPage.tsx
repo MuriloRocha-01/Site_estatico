@@ -6,10 +6,10 @@ import MainLayoutHero from '../layouts/MainLayoutHero/MainLayoutHero.tsx';
 function ProdutosDetalhePage(){  
 
     return(
-        <>
+        <div className='flex flex-col gap-10 overflow-x-hidden'>
             <MainLayoutHero
             imagem={ProdutosFundo}
-            label1="Veja Nossos Produtos"
+            label1="Nossos Produtos"
             label2={
             <>
                 Perfis estruturais em aço com a qualidade e <br />
@@ -19,7 +19,7 @@ function ProdutosDetalhePage(){
                 
                 <CardsProdutos/>
             </MainLayoutHero>
-        </>
+        </div>
     )
 
 }

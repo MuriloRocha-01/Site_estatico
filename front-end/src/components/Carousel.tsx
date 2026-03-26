@@ -3,18 +3,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import type { Swiper as SwiperClass } from 'swiper/types';
 
+// @ts-ignore
 import 'swiper/css';
+// @ts-ignore
 import 'swiper/css/pagination';
-import  'swiper/css/navigation';
+// @ts-ignore
+import 'swiper/css/navigation';
 
 
 import img from '../assets/image.jpg';
 import img2 from '../assets/image02.jpg';
-import img3 from '../assets/image03.jpg';
+
 const MOCK_IMAGES = [
   { id: 0, url: img, title: 'imagem 1' },
   { id: 1, url: img2, title: 'imagem 2 ' },
-  { id: 2, url:img3, title: 'imagem 3'}
 ];
 
 const Carousel = () => {
@@ -56,7 +58,7 @@ const Carousel = () => {
             onClick={() => swiperRef.current?.slideTo(index)}
             className={`transition-all duration-300 h-3 rounded-full ${
               activeIndex === index
-                ? "w-12 bg-red-600"
+                ? "w-12 bg-red"
                 : "w-3 bg-white/50 hover:bg-white"
             }`}
           />

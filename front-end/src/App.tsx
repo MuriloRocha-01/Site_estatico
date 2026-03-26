@@ -7,7 +7,7 @@ import Router from './router/Router';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/granperfil/teste'>
       <Router />
     </BrowserRouter>
   )

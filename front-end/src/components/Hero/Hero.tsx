@@ -2,7 +2,7 @@ import type { HeroProps } from "./interfaces"
 
 const Hero = ({ imagem, label1, label2 } : HeroProps) => {
     return(
-        <header className='relative h-[550px] w-full flex items-center overflow-hidden'>
+        <header className='relative h-[600px] w-full flex items-center overflow-hidden'>
             <img 
             src={imagem}
             alt="" 
@@ -10,7 +10,7 @@ const Hero = ({ imagem, label1, label2 } : HeroProps) => {
             />
             <div className='absolute inset-0 bg-black/50 z-10'></div>
 
-            <section className='relative z-20 px-4 font-montserrat text-left text-white ml-10'>
+            <section className='relative z-20 px-4 text-left text-white  md:ml-10 xl:ml-[10%]'>
             <h1 className='text-[1.4rem] font-bold md:text-3xl md:text-4xl tracking-wider'>
                 {label1}
             </h1>
