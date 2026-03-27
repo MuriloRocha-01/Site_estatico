@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import HeroDetalhe from '../components/Produto/HeroDetalhe' 
+import HeroDetalhe from '../components/HeroDetalhe' 
 import MainLayout from '../layouts/MainLayout/MainLayout'; 
 
 const ProdutoDetalhePage = () => {

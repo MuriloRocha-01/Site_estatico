@@ -6,7 +6,7 @@ function Header() {
   const { goToOrcamento } = useMenu();
 
   return (
-    <div className="relative flex items-center h-[calc(100vh-80px)] w-full overflow-hidden px-6 md:px-20 lg:px-[20%]">
+    <div className="relative flex items-center h-[700px] w-full overflow-hidden px-6 md:px-20 lg:px-[20%]">
       <Carousel />
       
       <div className="relative z-10 text-white flex flex-col gap-4 items-start text-left w-full">

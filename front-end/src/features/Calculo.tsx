@@ -1,4 +1,4 @@
-import calculofundo from "../assets/calculo fundo.png"
+import calculoPageCard from "../assets/calculopage card.png"
 
 function Calculo(){
     return(
@@ -45,7 +45,7 @@ function Calculo(){
                 
         </form>
         </div>
-        <img src={calculofundo} className="hidden lg:block w-[50%] h-full rounded-xl"></img>
+        <img src={calculoPageCard} className="hidden lg:block w-[50%] h-full rounded-xl"></img>
         </div>
     </div>
     )

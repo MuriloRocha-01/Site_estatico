@@ -2,7 +2,7 @@ import type { HeroProps } from "./interfaces"
 
 const Hero = ({ imagem, label1, label2 } : HeroProps) => {
     return(
-        <header className='relative h-[600px] w-full flex items-center overflow-hidden'>
+        <header className='relative h-[700px] w-full flex items-center overflow-hidden'>
             <img 
             src={imagem}
             alt="" 

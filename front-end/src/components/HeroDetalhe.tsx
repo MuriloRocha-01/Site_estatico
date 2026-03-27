@@ -1,6 +1,8 @@
-import type { ProdutoProps } from "./interfaces";
-import { MOCK_PRODUCTS } from "../../shared/products_mock";
+import { MOCK_PRODUCTS } from "../shared/products_mock";
 
+interface ProdutoProps{
+    id:number;
+}
 const HeroDetalhe = ({ id }: ProdutoProps) => {
     const produto = MOCK_PRODUCTS.find((p) => p.id === id);
 

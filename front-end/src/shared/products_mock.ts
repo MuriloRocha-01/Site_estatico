@@ -1,12 +1,12 @@
-import barrachata from '../assets/barra chata.jpg' 
-import PerfisLaminados from '../assets/perfis laminados.jpg';
-import PerfisUSimples from '../assets/perfil u simples.png';
-import PerfisUEnrijecidos from '../assets/perfil u enrijecido.png';
-import VigasdeAco from '../assets/vigas de aço.jpg';
-import FerroRedondo from  '../assets/ferro redondo.jpg';
-import PerfisDobradosSobMedida from '../assets/perfis dobrados sob medida.jpg';
-import Cantoneiras from '../assets/cantoneiras.jpg';
-import tubodeaco from '../assets/tubos de aço.png';
+import barrachata from '../assets/produtosImg/barra chata.jpg' 
+import PerfisLaminados from '../assets/produtosImg/perfis laminados.jpg';
+import PerfisUSimples from '../assets/produtosImg/perfil u simples.png';
+import PerfisUEnrijecidos from '../assets/produtosImg/perfil u enrijecido.png';
+import VigasdeAco from '../assets/produtosImg/vigas de aço.jpg';
+import FerroRedondo from  '../assets/produtosImg/ferro redondo.jpg';
+import PerfisDobradosSobMedida from '../assets/produtosImg/perfis dobrados sob medida.jpg';
+import Cantoneiras from '../assets/produtosImg/cantoneiras.jpg';
+import tubodeaco from '../assets/produtosImg/tubos de aço.png';
 
 export const MOCK_PRODUCTS = [
   { id: 0, url: Cantoneiras, title: 'Cantoneira', descricao:'Perfis amplamente utilizados em estruturas metálicas, reforços, suportes e diversos tipos de construções e montagens industriais.'},
