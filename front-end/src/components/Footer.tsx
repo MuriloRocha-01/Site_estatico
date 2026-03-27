@@ -24,10 +24,7 @@ function Footer(){
 
                     <span className='text-center md:text-left flex gap-2'>
                     <Mail size={23} className='hover:scale-105'/>
-                    <a 
-                        className='hover:text-red transition duration-200'>
-                            Comercial@granperfil.com.br
-                        </a>
+                    Comercial@granperfil.com.br   
                     </span>
 
                     <span className='text-center md:text-left flex gap-2'>

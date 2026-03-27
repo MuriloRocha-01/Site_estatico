@@ -13,10 +13,14 @@ import 'swiper/css/navigation';
 
 import img from '../assets/image.jpg';
 import img2 from '../assets/image02.jpg';
+import img1 from '../assets/image01.png';
+import img3 from '../assets/image03.png';
 
 const MOCK_IMAGES = [
   { id: 0, url: img, title: 'imagem 1' },
-  { id: 1, url: img2, title: 'imagem 2 ' },
+  { id: 1, url: img1, title: 'imagem 1' },
+  { id: 2, url: img2, title: 'imagem 2' },
+  { id: 3, url: img3, title: 'imagem 3' },
 ];
 
 const Carousel = () => {

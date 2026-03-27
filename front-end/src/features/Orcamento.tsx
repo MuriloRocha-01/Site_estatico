@@ -1,8 +1,22 @@
 import orcamentofundo from '../assets/orcamento fundo.jpg'
+import {useState} from 'react';
 
 function Orcamento(){
+    const [nomeEmpresa,setNomeEmpresa] = useState('');
+    const [telefone,setTelefone] = useState('');
+    const [nomeProduto,setNomeProduto] = useState('');
+    const [quantidade,setQuantidade] = useState('');
+
+    function receberOrcamento(){
+        const mensagem = `Olá, gostaria de um orçamento:%0A%0A*Nome da empresa:* ${nomeEmpresa}%0A* Produto:* ${nomeProduto}%0A*Quantidade:* ${quantidade}`;
+        const telefone = 5511921113993;
+        const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`;
+
+        window.open(url, '_blank');
+    }
+
     return(
-        <div className="block md:flex min-h-[100vh] bg-gray-300 -z-30 ">
+    <div className="block md:flex min-h-[100vh] bg-gray-300 -z-30 ">
 
     
     <div className="w-full md:h-screen h-[550px] md:w-1/2 flex flex-col justify-center p-12 text-white relative overflow-hidden pt-20">
@@ -34,27 +48,38 @@ function Orcamento(){
             <input
                 className="border p-2 rounded"
                 placeholder="Nome da empresa"
+                onChange={(e) => setNomeEmpresa(e.target.value)}
+                value={nomeEmpresa}
             />
 
             <label>Digite o telefone:</label>
             <input
+                type='number'
                 className="border p-2 rounded"
                 placeholder="Telefone"
+                onChange={(e) => setTelefone(e.target.value)}
+                value={telefone}
             />
 
             <label>Digite o nome do produto:</label>
             <input
                 className="border p-2 rounded"
                 placeholder="Nome do produto"
+                onChange={(e) => setNomeProduto(e.target.value)}
+                value={nomeProduto}
             />
 
             <label>Digite a quantidade:</label>
             <input
+                type='number'
                 className="border p-2 rounded"
                 placeholder="Quantidade"
+                onChange={(e) =>setQuantidade (e.target.value)}
+                value={quantidade}
             />
 
-            <button className="bg-red text-white p-2 rounded mt-4 hover:bg-red-700 transition">
+            <button className="bg-red text-white p-2 rounded mt-4 hover:bg-red-700 transition"
+            onClick={receberOrcamento}>
                 Receber orçamento
             </button>
 
